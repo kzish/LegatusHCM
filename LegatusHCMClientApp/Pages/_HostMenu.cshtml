@@ -1,0 +1,25 @@
+﻿@page "/"
+@namespace LegatusHCMClientApp.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Legatus | Menu</title>
+    <link href="~/assets.main_menu/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets.main_menu/css/style.css" rel="stylesheet">
+</head>
+<body class="bg_menu">
+    <app>
+        @(await Html.RenderComponentAsync<App>(RenderMode.ServerPrerendered))
+    </app>
+    <script src="_framework/blazor.server.js"></script>
+    <script src="~/assets.main_menu/libs/jquery/jquery.slim.min.js"></script>
+    <script src="~/assets.main_menu/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
