@@ -13,27 +13,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="msapplication-tap-highlight" content="no">
 
+    <base href="~/" />
 
-    <link href="~/assets.legatus/css/main.css" rel="stylesheet">
+    <link href="assets.legatus/css/main.css" rel="stylesheet">
 
 
     <script src="_framework/blazor.server.js"></script>
     <script type="text/javascript" src="~/assets.legatus/js/main.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
     <script>
-        function TestDataTablesAdd(table) {
-            $(document).ready(function () {
-                $(table).DataTable();
-            });
-        }
+        $(document).ready(function () {
+            $("#example").DataTable();
+        });
     </script>
+
 </head>
 <body>
     <app>
-        @(await Html.RenderComponentAsync<App>(RenderMode.Static))
+        @(await Html.RenderComponentAsync<App>(RenderMode.ServerPrerendered))
     </app>
 </body>
 </html>

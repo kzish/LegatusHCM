@@ -129,35 +129,47 @@
                     <ul class="vertical-nav-menu">
                         <li class="app-sidebar__heading">Dashboards</li>
                         <li>
-                            @*<a href="/BusinessPartners" class="mm-active">
-                                    <i class="metismenu-icon pe-7s-display2"></i>
-                                    Dashboard 1
-                                </a>*@
                             <NavLink class="nav-link" href="/BusinessPartners" ActiveClass="mm-active" Match="@NavLinkMatch.All">
                                 <i class="metismenu-icon pe-7s-display2"></i>Dashboard 1
                             </NavLink>
-
                         </li>
                         <li class="app-sidebar__heading">Business Partners</li>
                         <li>
-
-                            <NavLink class="nav-link" href="/BusinessPartners/AllBusinessPartners" ActiveClass="mm-active" Match="@NavLinkMatch.All">
+                            <NavLink class="nav-link" href="#" ActiveClass="mm-active" Match="@NavLinkMatch.All">
                                 <i class="metismenu-icon pe-7s-users"></i>Business Partners
+                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                             </NavLink>
+                            <ul>
+                                <li>
+                                    <NavLink class="nav-link" href="/BusinessPartners/CreateNew" ActiveClass="mm-active" Match="@NavLinkMatch.All">
+                                        Create New 
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink class="nav-link" href="/BusinessPartners/All" ActiveClass="mm-active" Match="@NavLinkMatch.All">
+                                        View All 
+                                    </NavLink>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="/BusinessPartners/BusinessPartnersCategory">
+                            <a href="/BusinessPartners/Categories">
                                 <i class="metismenu-icon pe-7s-edit"></i>
                                 Business Partners Categories
                             </a>
+
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="content px-4">
-            <div class="app-main__outer" style="padding-top:20px">
-                @Body
+        <div class="content" style="background:red;width:100%!important;">
+            <div class="app-main">
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        @Body
+                    </div>
+                </div>
             </div>
         </div>
     </div>
