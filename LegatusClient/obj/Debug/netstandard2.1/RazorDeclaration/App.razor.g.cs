@@ -28,13 +28,6 @@ using System.Net.Http.Json;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\LegatusClient\_Imports.razor"
-using Microsoft.AspNetCore.Components.Authorization;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 4 "C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\LegatusClient\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
@@ -79,6 +72,13 @@ using LegatusClient;
 #nullable restore
 #line 10 "C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\LegatusClient\_Imports.razor"
 using LegatusClient.Shared;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\LegatusClient\_Imports.razor"
+using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden

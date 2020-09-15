@@ -1,0 +1,115 @@
+﻿@page "/Auth/Login"
+@inject IJSRuntime js
+@inject HttpClient http_client;
+@using System.Web;
+@inject NavigationManager navigation_manager;
+@using Newtonsoft.Json
+ 
+<div class="login_page">
+    <div class="row">
+        <div class="col-md-12">
+            <EditForm Model="@LM" OnValidSubmit="@HandleValidSubmit">
+                <DataAnnotationsValidator />
+                <center>
+                    <h2 class="black">Legatus</h2>
+                    <img class="login_hcity_icon" src="/assets/img/logo.png" />
+                    <br />
+                    <br />
+                    <h3 class="black">User Login</h3>
+                    <br />
+                    <br />
+                </center>
+
+                <div class="form-group">
+                    <label class="black">Email</label>
+                    <InputText @bind-Value="LM.email" type="email" class="form-control" placeholder="Enter Email" name="email" />
+                    <ValidationMessage For="@(() => LM.email)" />
+                </div>
+
+                <div class="form-group">
+                    <label class="black">Password</label>
+                    <InputText @bind-Value="LM.password" type="password" class="form-control" placeholder="Enter Password" name="password" />
+                    <ValidationMessage For="@(() => LM.password)" />
+                </div>
+
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <Loading isloading="@isloading"/>
+                        Login
+                    </button>
+                </div>
+                <center>
+                    <p style="color:red;">@message</p>
+                </center>
+
+            </EditForm>
+          
+        </div>
+    </div>
+</div>
+
+<style>
+    .validation-message {
+        color: red;
+    }
+</style>
+
+@code{
+    bool isloading = false;
+    bool button_enabled = true;
+    string message = string.Empty;
+    @using System.ComponentModel.DataAnnotations;
+    LoginModel LM = new LoginModel();
+    class LoginModel
+    {
+        [Required(ErrorMessage = "This field is required")]
+        [EmailAddress]
+        [DataType(DataType.EmailAddress)]
+        public string email { get; set; }
+
+        [Required(ErrorMessage = "This field is required")]
+        [DataType(DataType.Password)]
+        public string password { get; set; }
+    }
+
+
+    private async Task HandleValidSubmit()
+    {
+
+        //diable button and show loading icon
+        isloading = true;
+        button_enabled = false;
+        try
+        {
+            var response1 = await http_client
+                .PostAsync(($"_Auth/Login?email={HttpUtility.UrlEncode(LM.email)}&password={HttpUtility.UrlEncode(LM.password)}"), null);
+            var response2 = await response1.Content.ReadAsStringAsync();
+            dynamic json = JsonConvert.DeserializeObject(response2);
+            if (json.res.ToString()=="ok")
+            {
+                string current_user = json.data.ToString();
+                await local_storage.RemoveItemAsync("current_user");
+                await local_storage.SetItemAsync("current_user", current_user);
+                navigation_manager.NavigateTo("/",true);//goes to main menu and force reload
+            }
+            else
+            {
+                message = json.data.ToString();
+            }
+
+        }
+        catch (Exception ex)
+        {
+            message = "Error occurred";
+            Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+            isloading = false;
+            button_enabled = true;
+        }
+    }
+
+}
+

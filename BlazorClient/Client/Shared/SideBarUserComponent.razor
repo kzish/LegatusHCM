@@ -1,0 +1,86 @@
+﻿@using System.Web;
+@inject NavigationManager navigation_manager
+@inject HttpClient http_client
+<div class="sidebar-item sidebar-brand">
+    <div class="row">
+        <div class="col-md-12">
+            <a href="/" style="width:80px!important;">
+                Menu /
+            </a>
+            <b style="color:wheat">
+                @(title.Length >= 12?title.Substring(0, 12)+"...":title)
+            </b>
+        </div>
+    </div>
+</div>
+<div class="sidebar-item sidebar-header d-flex flex-nowrap">
+    <div class="user-pic">
+        <img src="/assets/img/user.jpg" />
+    </div>
+    <div class="user-info" @onclick="@(()=>ToggleDropDown())" style="cursor:pointer">
+        @if (user != null)
+        {
+            @(user.Identity.Name.Length>=19? user.Identity.Name.Substring(0,16)+"...": user.Identity.Name)  <i class="fas fa-caret-down"></i>
+           
+            <div class="nav-item dropdown @(drop_down_open?"show":"")" style="position:absolute">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="@drop_down_open">
+                </a>
+                <div class="dropdown-menu @(drop_down_open?"show":"")">
+                    <a class="dropdown-item" href="#">Account</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" @onclick="(()=>  Logout())">
+                        Log out
+                    </a>
+                </div>
+            </div>
+        }
+        <span class="user-role" title="@user_role">
+            @(user_role.Length >= 12? user_role.Substring(0, 12)+"...": user_role)
+        </span>
+        <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span> <Loading isloading="@isloading" />
+        </span>
+    </div>
+</div>
+
+
+
+@code {
+
+    [Parameter]
+    public string title { get; set; }
+    [Parameter]
+    public string user_role { get; set; } = "System User";
+
+    public bool isloading = false;
+    ClaimsPrincipal user = null;
+
+    bool drop_down_open = false;
+
+    void ToggleDropDown()
+    {
+        drop_down_open = !drop_down_open;
+    }
+
+    async Task Logout()
+    {
+        isloading = true;
+        var response1 = await http_client.PostAsync("_Auth/Logoff", null);
+        var response2 = await response1.Content.ReadAsStringAsync();
+        if (response2.ToLower() == "logout success")
+        {
+            navigation_manager.NavigateTo("Auth/Login", true);
+        }
+        isloading = false;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        var authstate = await authentication_state_provider.GetAuthenticationStateAsync();
+        user = authstate.User;
+    }
+
+
+}

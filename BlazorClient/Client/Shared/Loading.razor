@@ -1,0 +1,7 @@
+﻿@if (isloading)
+{
+    <img src="/assets/img/loading.gif" style="height:25px;width:25px;" />
+}
+@code {
+    [Parameter] public bool isloading { get; set; } = false;
+}

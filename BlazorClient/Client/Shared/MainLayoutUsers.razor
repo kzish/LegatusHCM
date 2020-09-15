@@ -1,0 +1,40 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime js;
+
+<disv class="page-wrapper default-theme sidebar-bg bg1 toggled">
+    <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+            <SideBarUserComponent title="Users" />
+            <SideBarSearchComponent search_context="users" />
+            <!-- sidebar-menu  -->
+            <div class=" sidebar-item sidebar-menu">
+                <ul>
+                    <li class="header-menu">
+                        <span>General</span>
+                    </li>
+                    <li>
+                        <a href="/Users" class="active">
+                            <i class="fa fa-users"></i>
+                            <span class="menu-text">Users</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page-content pt-2">
+        <div id="overlay" class="overlay"></div>
+        <div class="container-fluid p-5">
+            @Body
+        </div>
+    </main>
+</disv>
+
+@code
+{
+    protected override async Task OnAfterRenderAsync(bool first_render)
+    {
+        if (first_render)
+            await js.InvokeAsync<string>("init");
+    }
+}

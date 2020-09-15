@@ -1,0 +1,25 @@
+﻿@page "/BusinessPartners/All"
+
+@inject HttpClient http_client;
+@inject IJSRuntime JsRuntime;
+
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <input type="text" @bind="message" />
+        <button @onclick="ShowAlert">Show Alert</button>
+
+    </div>
+</div>
+
+@code {
+
+    string message = "";
+
+    private async Task ShowAlert()
+    {
+        await JsRuntime.InvokeVoidAsync("alert", message);
+    }
+}

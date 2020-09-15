@@ -1,0 +1,23 @@
+﻿@{ 
+    Layout = "_LayoutMain";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <form action="~/Company/CreateCompany" method="post">
+            <div class="form-group">
+                <input type="text" value="" name="CompanyName" required class="form-control">
+                <small><span style="color:red;">* </span>Company Name</small>
+            </div>
+            <div class="form-group">
+                <input type="email" value="" name="Email" required class="form-control" placeholder="email@companyName.com">
+                <small><span style="color:red;">* </span>Super User Email</small>
+            </div>
+            <div class="form-group">
+                <input type="text" value="Password@123" name="Password" required class="form-control" placeholder="Password@123" >
+                <small><span style="color:red;">* </span>Super User Password</small>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">SAVE</button>
+        </form>
+    </div>
+</div>

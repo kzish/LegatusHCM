@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "_LayoutMain";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <a href="~/Company/CreateCompany" style="color:blue;"><u>New Company</u></a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12" id="data">
+        <center id="loading">
+            <img src="~/assets/img/_loading.gif" />
+        </center>
+    </div>
+</div>
+
+
+<script>
+    $.ajax({
+        method: "get",
+        url: "@(Url.Content("~/Company/ajaxAllCompanies"))",
+        success: function (data) {
+            $("#data").html(data);
+            $("#loading").hide();
+        },
+        error: function () {
+            $("#loading").hide();
+            alert("Error fetching data");
+        },
+    });
+</script>

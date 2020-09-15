@@ -1,26 +1,27 @@
 ﻿@inherits LayoutComponentBase
-@inject IJSRuntime js;
+@inject IJSRuntime js
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Legatus</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor03">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Help">Help</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/About">About</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Legatus</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Help">Help</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/About">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 <div class="bg_menu">
     <main class="page-content pt-2">
         <div id="overlay" class="overlay"></div>
@@ -34,7 +35,8 @@
 {
     protected override async Task OnAfterRenderAsync(bool first_render)
     {
+        //init the sidebar js
         if (first_render)
-            await js.InvokeAsync("init");
+            await js.InvokeAsync<string>("init");
     }
 }

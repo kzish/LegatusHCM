@@ -15,6 +15,8 @@ using System.IO;
 
 using System.Security.Cryptography.X509Certificates;
 using Auth.Models;
+using AuthMicroService.Areas.Identity.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace AuthMicroService
 {
@@ -35,6 +37,7 @@ namespace AuthMicroService
               .AddDeveloperSigningCredential()
           .AddInMemoryApiResources(Config.GetApiResources())
           .AddInMemoryClients(Config.GetApiClients());
+            services.AddDbContext<dbContext>(i => i.UseSqlServer(Configuration.GetConnectionString("db")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
 

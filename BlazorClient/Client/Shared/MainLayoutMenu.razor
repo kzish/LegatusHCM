@@ -1,0 +1,73 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime js
+@using System.Web;
+@inject NavigationManager navigation_manager
+@inject HttpClient http_client
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Legatus</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Help">Help</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/About">About</a>
+            </li>
+        </ul>
+        <AuthorizeView>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <Loading isloading="@isloading" />@context.User.Identity.Name
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Account</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item"@onclick="(()=>  Logout())">
+                    Log out
+                    </a>
+                </div>
+            </div>
+        </AuthorizeView>
+    </div>
+</nav>
+<div class="bg_menu">
+    <main class="page-content pt-2">
+        <div id="overlay" class="overlay"></div>
+        <div class="container-fluid p-5">
+            @Body
+        </div>
+    </main>
+</div>
+
+@code
+{
+
+    public bool isloading = false;
+    protected override async Task OnAfterRenderAsync(bool first_render)
+    {
+        //init the sidebar js
+        if (first_render)
+            await js.InvokeAsync<string>("init");
+    }
+
+
+    async Task Logout()
+    {
+        isloading = true;
+        var response1 = await http_client.PostAsync("_Auth/Logoff", null);
+        var response2 = await response1.Content.ReadAsStringAsync();
+        if (response2.ToLower() == "logout success")
+        {
+            navigation_manager.NavigateTo("Auth/Login",true);
+        }
+        isloading = false;
+    }
+}

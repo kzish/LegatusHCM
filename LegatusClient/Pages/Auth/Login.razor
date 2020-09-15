@@ -1,0 +1,68 @@
+﻿@page "/Login"
+@inject IJSRuntime js
+
+<div class="login_page">
+    <div class="row">
+        <div class="col-md-12">
+            <EditForm Model="@LM" OnValidSubmit="@HandleValidSubmit">
+                <DataAnnotationsValidator />
+                    <center>
+                        <h2 class="black">Legatus</h2>
+                        <img class="login_hcity_icon" src="/assets/img/logo.png" />
+                        <br />
+                        <br />
+                        <h3 class="black">User Login</h3>
+                        <br />
+                        <br />
+                    </center>
+
+                    <div class="form-group">
+                        <label class="black">Email</label>
+                        <InputText @bind-Value="LM.email" type="email" class="form-control" placeholder="Enter Email" name="email" />
+                        <ValidationMessage For="@(() => LM.email)" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="black">Password</label>
+                        <InputText @bind-Value="LM.password" type="password" class="form-control" placeholder="Enter Password" name="password" />
+                        <ValidationMessage For="@(() => LM.password)" />
+                    </div>
+
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </div>
+
+                </EditForm>
+        </div>
+    </div>
+</div>
+
+<style>
+    .validation-message {
+        color: red;
+    }
+</style>
+
+@code{
+
+    @using System.ComponentModel.DataAnnotations;
+    LoginModel LM = new LoginModel();
+    class LoginModel
+    {
+        [Required(ErrorMessage ="This field is required")]
+        [EmailAddress]
+        [DataType(DataType.EmailAddress)]
+        public string email { get; set; }
+
+        [Required(ErrorMessage ="This field is required")]
+        [DataType(DataType.Password)]
+        public string password { get; set; }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        await js.InvokeAsync<string>("alert", "zvaita baba");
+    }
+}
+

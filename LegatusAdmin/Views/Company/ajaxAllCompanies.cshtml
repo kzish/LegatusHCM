@@ -1,0 +1,60 @@
+﻿@{
+    var items = (List<LegatusAdmin.Models.MCompany>)ViewBag.companies;
+}
+
+<table id="dt" class="table table-sm table-striped table-condensed table-active">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in items)
+        {
+        <tr>
+            @if (string.IsNullOrEmpty(item.CompanyLogo))
+            {
+                <td><img src="~/assets/img/pl.png" class="img_company_logo" /></td>
+            }
+            else
+            {
+                <td><img src="@item.CompanyLogo" class="img_company_logo" /></td>
+            }
+            <td>@item.CompanyName</td>
+            <td>
+                <a href="~/Company/view/@item.Id" class="" style="color:blue;">view</a>
+                <a href="javascript:void()" class="" onclick="confirm_delete('@item.Id')" style="color:red">delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+
+</table>
+
+
+<form action="~/Company/DeleteCompany" method="post" id="f1">
+    <input type="hidden" name="company_id" id="id"/>
+</form>
+
+<script>
+
+    function confirm_delete(id) {
+        $.confirm({
+            title: 'Information',
+            type: "red",
+            content: 'Delete this Item?',
+            buttons: {
+                Yes: function () {
+                    $("#id").val(id);
+                    $("#f1").submit();
+                },
+                No: function () {
+                },
+            }
+        });
+
+    }
+
+</script>

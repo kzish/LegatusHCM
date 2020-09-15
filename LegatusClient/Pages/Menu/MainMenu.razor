@@ -1,7 +1,8 @@
 ﻿@layout MainLayoutMenu
 @page "/"
 @page "/Menu"
-
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles="Admin")]
 
 <br />
 

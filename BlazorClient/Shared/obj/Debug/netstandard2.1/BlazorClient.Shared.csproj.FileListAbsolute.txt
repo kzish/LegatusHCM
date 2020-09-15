@@ -1,0 +1,9 @@
+C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Shared\bin\Debug\netstandard2.1\BlazorClient.Shared.deps.json
+C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Shared\bin\Debug\netstandard2.1\BlazorClient.Shared.dll
+C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Shared\bin\Debug\netstandard2.1\BlazorClient.Shared.pdb
+C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Shared\obj\Debug\netstandard2.1\BlazorClient.Shared.csprojAssemblyReference.cache
+C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Shared\obj\Debug\netstandard2.1\BlazorClient.Shared.AssemblyInfoInputs.cache
+C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Shared\obj\Debug\netstandard2.1\BlazorClient.Shared.AssemblyInfo.cs
+C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Shared\obj\Debug\netstandard2.1\BlazorClient.Shared.csproj.CoreCompileInputs.cache
+C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Shared\obj\Debug\netstandard2.1\BlazorClient.Shared.dll
+C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Shared\obj\Debug\netstandard2.1\BlazorClient.Shared.pdb

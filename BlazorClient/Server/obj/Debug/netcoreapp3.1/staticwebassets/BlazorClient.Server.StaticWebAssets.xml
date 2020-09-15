@@ -1,0 +1,7 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Client\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Client\bin\Debug\netstandard2.1\wwwroot\" />
+  <ContentRoot BasePath="/Identity" Path="C:\Users\samaritan\.nuget\packages\microsoft.aspnetcore.identity.ui\3.1.6\staticwebassets\V4\" />
+  <ContentRoot BasePath="_content/Blazored.Toast" Path="C:\Users\samaritan\.nuget\packages\blazored.toast\3.1.2\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication" Path="C:\Users\samaritan\.nuget\packages\microsoft.aspnetcore.components.webassembly.authentication\3.2.1\build\..\staticwebassets\" />
+</StaticWebAssets>

@@ -1,0 +1,119 @@
+﻿@page "/Users"
+@page "/Users/All"
+@layout MainLayoutUsers
+@inject HttpClient http_client;
+@inject IJSRuntime JsRuntime;
+
+
+<div class="row">
+    <div class="col-md-12">
+        <!-- Button trigger modal -->
+        <button @onclick="@(()=>{ modal_title = "New User"; modal_mode = "new"; })" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+            New User
+        </button>
+    </div>
+</div>
+<br />
+<br />
+<div class="row">
+    <div class="col-md-12">
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Email</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (users != null)
+                    @foreach (var user in users)
+                    {
+                        <tr class="table-active">
+                            <th scope="row">@user.email</th>
+                            <td>buton</td>
+                        </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">@modal_title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" @onclick="@(()=>ExecuteSubmitForm())">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<BlazoredToasts Position="ToastPosition.BottomCenter"
+                Timeout="10"
+                IconType="IconType.FontAwesome"
+                SuccessClass="success-toast-override"
+                SuccessIcon="fa fa-thumbs-up"
+                ErrorIcon="fa fa-bug" />
+
+
+@code {
+
+    List<SystemUsers> users = new List<SystemUsers>();
+
+    string modal_title = string.Empty;//title of the modal
+    string modal_mode = string.Empty;//new or edit
+
+    SystemUsers system_user = new SystemUsers();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            await base.OnInitializedAsync();
+            var response1 = await http_client.GetAsync("/SystemUsers/Users");
+            var response2 = await response1.Content.ReadAsStringAsync();
+            dynamic json = JsonConvert.DeserializeObject(response2);
+            if (json.res == "ok")
+            {
+                users = JsonConvert.DeserializeObject<SystemUsers>(json.data.ToString());
+            }
+            else
+            {
+                toastService.ShowError(json.data.ToString());
+            }
+        }
+        catch (Exception ex)
+        {
+            toastService.ShowError(ex.Message);
+        }
+    }
+
+    void ExecuteSubmitForm()
+    {
+        if (modal_mode == "new")
+        {
+            toastService.ShowSuccess("hassan");
+        }
+        else
+        {
+            toastService.ShowInfo("hassan");
+        }
+    }
+}
