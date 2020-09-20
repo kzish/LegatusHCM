@@ -122,6 +122,13 @@ using Blazored.Toast.Configuration;
 #line hidden
 #nullable disable
 #nullable restore
+#line 21 "C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Client\_Imports.razor"
+using CurrieTechnologies.Razor.SweetAlert2;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 4 "C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Client\Pages\Menu\MainMenu.razor"
 using Microsoft.AspNetCore.Authorization;
 
@@ -222,6 +229,7 @@ using Microsoft.AspNetCore.Authorization;
 </div>");
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private SweetAlertService Swal { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IToastService toastService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider authentication_state_provider { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private Blazored.LocalStorage.ILocalStorageService local_storage { get; set; }

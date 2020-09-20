@@ -1,5 +1,6 @@
 ﻿<StaticWebAssets Version="1.0">
   <ContentRoot BasePath="/" Path="C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Client\bin\Debug\netstandard2.1\wwwroot\" />
   <ContentRoot BasePath="_content/Blazored.Toast" Path="C:\Users\samaritan\.nuget\packages\blazored.toast\3.1.2\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/CurrieTechnologies.Razor.SweetAlert2" Path="C:\Users\samaritan\.nuget\packages\currietechnologies.razor.sweetalert2\3.0.0\build\..\staticwebassets\" />
   <ContentRoot BasePath="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication" Path="C:\Users\samaritan\.nuget\packages\microsoft.aspnetcore.components.webassembly.authentication\3.2.1\build\..\staticwebassets\" />
 </StaticWebAssets>

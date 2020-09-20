@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Blazored.LocalStorage;
 
 namespace BlazorClient.Server.Globals
 {
@@ -11,5 +12,11 @@ namespace BlazorClient.Server.Globals
         public static string Issuer = Audience;
         public static string Audience = "https://localhost:44345/";
         public static string Secret = "my_secret_oga12345678910111213141516";//minimum 16 chars
+
+
+        
+
     }
+
+   
 }

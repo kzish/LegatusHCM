@@ -167,16 +167,13 @@ C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\Blazo
 C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\Blazored.LocalStorage.dll
 C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\Blazored.Toast.dll
-C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
-C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\CurrieTechnologies.Razor.SweetAlert2.dll
 C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\IdentityModel.dll
 C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\IdentityServer4.dll
 C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\IdentityServer4.AspNetIdentity.dll
 C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.dll
 C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.Storage.dll
 C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\IdentityServer4.Storage.dll
-C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
-C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.ApiAuthorization.IdentityServer.dll
 C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll

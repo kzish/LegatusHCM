@@ -121,6 +121,13 @@ using Blazored.Toast.Configuration;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 21 "C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Client\_Imports.razor"
+using CurrieTechnologies.Razor.SweetAlert2;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/BusinessPartners/Categories")]
     public partial class Business_Partners_Categories : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -130,6 +137,7 @@ using Blazored.Toast.Configuration;
             __builder.AddMarkupContent(0, "\r\n\r\nbusiness partners\r\n\r\n\r\n");
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private SweetAlertService Swal { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IToastService toastService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider authentication_state_provider { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private Blazored.LocalStorage.ILocalStorageService local_storage { get; set; }

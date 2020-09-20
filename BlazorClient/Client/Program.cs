@@ -7,6 +7,7 @@ using BlazorClient.Services;
 using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Blazored.Toast;
+using CurrieTechnologies.Razor.SweetAlert2;
 
 namespace BlazorClient.Client
 {
@@ -16,15 +17,17 @@ namespace BlazorClient.Client
         {
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("app");
+            builder.Services.AddSweetAlert2();
+            builder.Services.AddBlazoredToast();
             builder.Services
                 .AddHttpClient("BlazorApp7.ServerAPI",
                 client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress));
-                //.AddHttpMessageHandler<BaseAddressAuthorizationMessageHandler>();
+            //.AddHttpMessageHandler<BaseAddressAuthorizationMessageHandler>();
             builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("BlazorApp7.ServerAPI"));
             builder.Services.AddApiAuthorization();
             builder.Services.AddBlazoredLocalStorage(config =>
             config.JsonSerializerOptions.WriteIndented = true);
-            builder.Services.AddBlazoredToast();
+            
             await builder.Build().RunAsync();
         }
     }

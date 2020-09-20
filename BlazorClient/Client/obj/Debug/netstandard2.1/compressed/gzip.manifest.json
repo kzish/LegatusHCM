@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\gkmJHnoHf9O3E8TOdYV6hbTLGoXtDiTpWKbT2V7TIYw=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\gFP_9mGd0wrA7luUJJ7mWClZ_zh4G4GFYDdKLEz0B6g=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorClient.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorClient.Client.dll.gz"
     },
@@ -166,7 +166,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Bs1Wrmh4ex9dTEIT0yCRF52N-wOmsBDt457BHr0-ssM=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\yFTwTS16q6jefUDI6nVJSEskooCjUCYQYKoLAkZ2nck=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
     },
@@ -181,22 +181,22 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\oK1Bjv95fH_hSbogUkJE_xDAI203kJG6lL6Sm-NuPWg=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\d04zIStVcFNO5larHi32IT4SSemvK1abhwxWZVFJcRM=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\6gJMwefpsWLHWsEipZp143xn8k2Ea27upnXqjUT6iNI=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\r2LBjPMuwCEVf-LvUtgv5qnp0CdmnZ9HsVnmdyFTVI4=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Logging.Abstractions.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\rvTW0d54uLW0iDMAX30lpmr9f8uHoS3YYkEU5zNGhyc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\jy2f00FanofpLVaiV0ZLVMwgeQoAAw0lk598xWLLjCw=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Options.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\y-FyJQOcW2TOcTp7Iuv8brGBzL5ZP0oJdG7ysK_gtKc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\gVSVeQ5oYtEMI_SN4sTxxJUMIQATQ0ezbACLauNlgX8=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Primitives.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Primitives.dll.gz"
     },
@@ -211,37 +211,37 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.ComponentModel.DataAnnotations.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\m7Q_cF5-ji3OMfdGlCuE8pQ-iM_kxNHLq-IEWVvIaOg=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\PnKO7lUOW7f4kozb_ZYmBIuHDJnrwSZKrFWmCL15nHk=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Forms.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Forms.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\PEg9ghiKSWBTX0jq8pFDvv2Yvw92Y8W0ELtWrSE4fhA=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\A1FNAHZltX6j1uITGR2AmpE0HH1_iAQhYiPy8WEs6_A=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\v81_jXoFd0Z-SMX-wpqp3IEyKbSoSjl5uUnJNz_FnRw=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\N41oSGs2TA35fAHZ4FkJ_SAlbvmeML3mLTDMsifhfQI=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorClient.Shared.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorClient.Shared.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\4NUQ26HmvXRi8smc0jz9940OUECDLQnoMWQLrMLe0ok=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\OJlJ-n0p9-SW1kpHK6YE8g6oWHKImKZVf_VvZlVBJ60=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Authorization.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Authorization.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\825GQI5nG1C1WqLD1SNKSpjzLCNbH2-KChgjBL0SSXI=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\C4iHzDU4kEkfkK3SIyKjVTaq4QMC_rxGcdJTuYWWiJM=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Metadata.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Metadata.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\YVKMyH3AN_9RSb6NRRz7JNpG-bR_qYX2hqVAouLpfz4=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\bSgsT2x5xMvs8mara5wU_EJwcyHa9GVMU85HwhWcdWM=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\AV8hgKJvxEXM5wtB0rWrbSVD_jqppNW1JXqLoZhO794=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Web.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.gz"
     },
@@ -259,6 +259,11 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\SnlpX7tqR4Or48_LUVR7CMv3xLhjy1JBnmDfQCb2GwM=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazored.Toast.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.Toast.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ACmXWgI4KXNU3tR22mhXz2zDUARij2LD6Kktb5odx3Q=.hash",
+      "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\CurrieTechnologies.Razor.SweetAlert2.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/CurrieTechnologies.Razor.SweetAlert2.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\7_FtaZd2xSysaMLC59XhYdtkNMZ15ha0lk73dxPdT5w=.hash",
@@ -311,12 +316,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\gjFLTfu-iaJD8V9ALp0osT9YDMzwsdlIxSKFsrUctg8=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\t7Ep5t4vDRyMsTNs5H7OBLaLrWl2b_KA3FIpE9WY_BQ=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorClient.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorClient.Client.pdb.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\XzmZ9-tderU8L_b_7_0blrxySgnquH7eRgAyYlddpoc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\KqpcP7j-TE-wxrsECSA8jzB2u_6zZeZ_oeIluqsDi4U=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorClient.Shared.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorClient.Shared.pdb.gz"
     },
@@ -341,12 +346,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\tZ_SpTyu7EE00WxCx-kkOVU2-1bIvsfZrUwdyU_mGs0=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\yvl04DKUkhkKfwNxQMkWKZNmDrF2yz7vP7H3HDlqYv4=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\gXs4e7ghPmeRT__o83L2TI0RNCYvbeIqRCcLjKtMh_s=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Tn8G1qGFDQ3GEI8Ko6vefbtPa_-EXtpH-NvNMOQrKdw=.hash",
       "Source": "C:\\Users\\samaritan\\Documents\\Visual Studio 2017\\projects\\sirach\\LegatusHCM\\BlazorClient\\Client\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.gz"
     }

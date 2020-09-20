@@ -50,6 +50,7 @@ obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.Web.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.Authorization.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Blazored.Toast.dll
+obj\Debug\netstandard2.1\blazor\unlinked\CurrieTechnologies.Razor.SweetAlert2.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Blazored.LocalStorage.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.WebAssembly.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Configuration.dll

@@ -85,24 +85,34 @@ namespace BlazorClient.Controllers
                 user.company_id = asp_net_user.CompanyId;
                 user.company_name = asp_net_user.Company.CompanyName;
 
-
+                //key 
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Globals.Secret));
                 var signingCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-                var claims = new[]
+                //claims
+                var claims = new List<Claim>();
+                claims.Add(new Claim("user_id", asp_net_user.Id));
+                claims.Add(new Claim("company_id", asp_net_user.CompanyId));
+                var roles = db.AspNetRoles.Select(i => i.Name).ToList();
+                var id_user = await userManager.FindByNameAsync(asp_net_user.Email);
+                //add roles to claims
+                foreach(var role in roles)
                 {
-                    new Claim(JwtRegisteredClaimNames.Sub,asp_net_user.Id),
-                    new Claim(JwtRegisteredClaimNames.UniqueName,"test name"),
-                    new Claim(ClaimTypes.Role,"admin"),
-                };
+                    if(await userManager.IsInRoleAsync(id_user,role))
+                    {
+                        claims.Add(new Claim(ClaimTypes.Role,role));
+                    }
+                }
+                //create jwt token
                 var token = new JwtSecurityToken(
                     Globals.Issuer,
                     Globals.Audience,
                     claims,
                     DateTime.Now,
-                    DateTime.Now.AddDays(1),
+                    DateTime.Now.AddYears(1),//one year token
                     signingCredentials
                     );
+                //serialize token
                 var jsonToken = new JwtSecurityTokenHandler().WriteToken(token);
                 return Json(new{
                     res="ok",

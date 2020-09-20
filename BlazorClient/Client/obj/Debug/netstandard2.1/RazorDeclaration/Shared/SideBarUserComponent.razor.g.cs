@@ -126,6 +126,13 @@ using Blazored.Toast.Configuration;
 #line hidden
 #nullable disable
 #nullable restore
+#line 21 "C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Client\_Imports.razor"
+using CurrieTechnologies.Razor.SweetAlert2;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\samaritan\Documents\Visual Studio 2017\projects\sirach\LegatusHCM\BlazorClient\Client\Shared\SideBarUserComponent.razor"
 using System.Web;
 
@@ -184,6 +191,7 @@ using System.Web;
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient http_client { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigation_manager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private SweetAlertService Swal { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IToastService toastService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider authentication_state_provider { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private Blazored.LocalStorage.ILocalStorageService local_storage { get; set; }

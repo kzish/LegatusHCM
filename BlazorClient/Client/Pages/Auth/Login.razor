@@ -89,8 +89,13 @@
             if (json.res.ToString()=="ok")
             {
                 string current_user = json.data.ToString();
+                string access_token = json.access_token.ToString();
+                //
                 await local_storage.RemoveItemAsync("current_user");
                 await local_storage.SetItemAsync("current_user", current_user);
+                //
+                await local_storage.RemoveItemAsync("access_token");
+                await local_storage.SetItemAsync("access_token", access_token);
                 navigation_manager.NavigateTo("/",true);//goes to main menu and force reload
             }
             else
